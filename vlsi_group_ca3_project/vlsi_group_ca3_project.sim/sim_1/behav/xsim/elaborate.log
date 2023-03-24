@@ -1,0 +1,7 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /home/harmony/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 888ad046b2df4393bb0c18ee2e71393b --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot vi_sys_top_level_behav xil_defaultlib.vi_sys_top_level -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_4x7_segment_driver.vhd:33]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit vi_sys_top_level in library work failed.
