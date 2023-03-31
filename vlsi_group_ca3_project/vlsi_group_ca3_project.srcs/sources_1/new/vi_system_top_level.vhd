@@ -3,7 +3,9 @@ library IEEE;use IEEE.STD_LOGIC_1164.ALL;use IEEE.STD_LOGIC_ARITH.ALL;use IEEE.S
 entity vi_sys_top_level is
     Port ( clk,reset 	: in  std_logic;
            din1,din2	: in  std_logic_vector(7 downto 0);
-           dout1,dout2	: out  std_logic_vector(7 downto 0)
+           dout1,dout2	: out std_logic_vector(7 downto 0);
+           anode_active : out std_logic_vector(3 downto 0);
+           LED_out : out STD_LOGIC_VECTOR (6 downto 0)
            --an           : out std_logic_vector(3 downto 0)
            );
 end vi_sys_top_level;
@@ -79,7 +81,8 @@ signal din_sig,dout_sig,port_id_sig:std_logic_vector(7 downto 0);
 signal write_strobe_sig,k_write_strobe_sig,read_strobe_sig,interrupt_sig,interrupt_ack_sig : std_logic;
 signal sleep_sig,rdl_sig,reset_sig,bram_enable_sig:std_logic;
 signal number1:std_logic_vector(13 downto 0);
-
+signal s_anode_active:STD_LOGIC_VECTOR(3 downto 0);
+signal s_LED_out:STD_LOGIC_VECTOR(6 downto 0);
 begin
 --------------------------------------------------------------------
 --an <= "1111";
@@ -120,7 +123,10 @@ vi_out_ports:vi_output_ports port map (clk=>clk,write_strobe=>write_strobe_sig,p
 
 vi_in_ports:vi_input_ports port map (clk=>clk,read_strobe=>read_strobe_sig,port_id=>port_id_sig,din1=>din1,din2=>din2,dout=>din_sig);
 
-vi_display_driver:vi_4x7_segment_driver port map (clk=>clk,reset=>reset);
+vi_display_driver:vi_4x7_segment_driver port map (clk=>clk,reset=>reset,anode_active=>s_anode_active,LED_out=>s_LED_out);
+
+anode_active <= s_anode_active;
+LED_out <= s_LED_out;
 
 end Behavioral;
 

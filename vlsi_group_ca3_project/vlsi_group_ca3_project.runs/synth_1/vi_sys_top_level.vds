@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Mar 24 17:27:04 2023
-# Process ID: 49619
+# Start of session at: Fri Mar 31 15:01:44 2023
+# Process ID: 8873
 # Current directory: /media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.runs/synth_1
 # Command line: vivado -log vi_sys_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vi_sys_top_level.tcl
 # Log file: /media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.runs/synth_1/vi_sys_top_level.vds
@@ -17,15 +17,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 49746
+INFO: [Synth 8-7075] Helper process launched with PID 8902
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2297.406 ; gain = 0.000 ; free physical = 315 ; free virtual = 31983
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2291.410 ; gain = 0.000 ; free physical = 6956 ; free virtual = 43049
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'vi_sys_top_level' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'vi_sys_top_level' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:13]
 	Parameter hwbuild bound to: 8'b00000000 
 	Parameter interrupt_vector bound to: 12'b001111111111 
 	Parameter scratch_pad_memory_size bound to: 64 - type: integer 
-INFO: [Synth 8-3491] module 'kcpsm6' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/kcpsm6.vhd:87' bound to instance 'processor' of component 'kcpsm6' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:90]
+INFO: [Synth 8-3491] module 'kcpsm6' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/kcpsm6.vhd:87' bound to instance 'processor' of component 'kcpsm6' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:93]
 INFO: [Synth 8-638] synthesizing module 'kcpsm6' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/kcpsm6.vhd:111]
 	Parameter hwbuild bound to: 8'b00000000 
 	Parameter interrupt_vector bound to: 12'b001111111111 
@@ -368,7 +368,7 @@ INFO: [Synth 8-256] done synthesizing module 'kcpsm6' (1#1) [/media/2TB_Crucial_
 	Parameter C_FAMILY bound to: 7S - type: string 
 	Parameter C_RAM_SIZE_KWORDS bound to: 1 - type: integer 
 	Parameter C_JTAG_LOADER_ENABLE bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'vi_sys_rom' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/imports/vlsi_group_ca3_project/vi_sys_rom.vhd:135' bound to instance 'the_rom' of component 'vi_sys_rom' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:109]
+INFO: [Synth 8-3491] module 'vi_sys_rom' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/imports/vlsi_group_ca3_project/vi_sys_rom.vhd:135' bound to instance 'the_rom' of component 'vi_sys_rom' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:112]
 INFO: [Synth 8-638] synthesizing module 'vi_sys_rom' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/imports/vlsi_group_ca3_project/vi_sys_rom.vhd:146]
 	Parameter C_FAMILY bound to: 7S - type: string 
 	Parameter C_RAM_SIZE_KWORDS bound to: 1 - type: integer 
@@ -473,30 +473,30 @@ INFO: [Synth 8-638] synthesizing module 'vi_sys_rom' [/media/2TB_Crucial_SSD/rep
 	Parameter WRITE_WIDTH_A bound to: 18 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'vi_sys_rom' (2#1) [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/imports/vlsi_group_ca3_project/vi_sys_rom.vhd:146]
-INFO: [Synth 8-3491] module 'vi_output_ports' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_output_ports.vhd:2' bound to instance 'vi_out_ports' of component 'vi_output_ports' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:119]
+INFO: [Synth 8-3491] module 'vi_output_ports' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_output_ports.vhd:2' bound to instance 'vi_out_ports' of component 'vi_output_ports' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:122]
 INFO: [Synth 8-638] synthesizing module 'vi_output_ports' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_output_ports.vhd:7]
 INFO: [Synth 8-256] done synthesizing module 'vi_output_ports' (3#1) [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_output_ports.vhd:7]
-INFO: [Synth 8-3491] module 'vi_input_ports' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_input_ports.vhd:2' bound to instance 'vi_in_ports' of component 'vi_input_ports' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:121]
+INFO: [Synth 8-3491] module 'vi_input_ports' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_input_ports.vhd:2' bound to instance 'vi_in_ports' of component 'vi_input_ports' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:124]
 INFO: [Synth 8-638] synthesizing module 'vi_input_ports' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_input_ports.vhd:7]
 INFO: [Synth 8-256] done synthesizing module 'vi_input_ports' (4#1) [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_input_ports.vhd:7]
-INFO: [Synth 8-3491] module 'vi_4x7_segment_driver' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_4x7_segment_driver.vhd:4' bound to instance 'vi_display_driver' of component 'vi_4x7_segment_driver' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:123]
+INFO: [Synth 8-3491] module 'vi_4x7_segment_driver' declared at '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_4x7_segment_driver.vhd:4' bound to instance 'vi_display_driver' of component 'vi_4x7_segment_driver' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:126]
 INFO: [Synth 8-638] synthesizing module 'vi_4x7_segment_driver' [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_4x7_segment_driver.vhd:11]
 WARNING: [Synth 8-614] signal 'displayed_number' is read in the process but is not in the sensitivity list [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_4x7_segment_driver.vhd:65]
 INFO: [Synth 8-256] done synthesizing module 'vi_4x7_segment_driver' (5#1) [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_4x7_segment_driver.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'vi_sys_top_level' (6#1) [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'vi_sys_top_level' (6#1) [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/sources_1/new/vi_system_top_level.vhd:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2297.406 ; gain = 0.000 ; free physical = 1150 ; free virtual = 32086
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2291.410 ; gain = 0.000 ; free physical = 7734 ; free virtual = 43836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2297.406 ; gain = 0.000 ; free physical = 1093 ; free virtual = 32067
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2291.410 ; gain = 0.000 ; free physical = 7731 ; free virtual = 43836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2297.406 ; gain = 0.000 ; free physical = 1091 ; free virtual = 32064
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2291.410 ; gain = 0.000 ; free physical = 7731 ; free virtual = 43836
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2297.406 ; gain = 0.000 ; free physical = 1130 ; free virtual = 32107
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2291.410 ; gain = 0.000 ; free physical = 7724 ; free virtual = 43829
 INFO: [Netlist 29-17] Analyzing 181 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -504,78 +504,12 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc]
-WARNING: [Vivado 12-584] No ports matched 'LED_out[6]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:82]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:82]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[6]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:83]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:83]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[5]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:84]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:84]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[5]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:85]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:85]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[4]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:86]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:86]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[4]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:87]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[3]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:88]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[3]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:89]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[2]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:90]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[2]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:91]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:91]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[1]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:92]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:92]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[1]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:93]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:93]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[0]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:94]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:94]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[0]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:95]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'anode_active[0]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:100]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:100]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'anode_active[0]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:101]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:101]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'anode_active[1]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:102]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'anode_active[1]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:103]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'anode_active[2]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:104]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:104]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'anode_active[2]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:105]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:105]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'anode_active[3]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:106]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:106]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'anode_active[3]'. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:107]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc:107]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.srcs/constrs_1/imports/group/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vi_sys_top_level_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/vi_sys_top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2361.258 ; gain = 0.000 ; free physical = 1028 ; free virtual = 32038
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2355.262 ; gain = 0.000 ; free physical = 7645 ; free virtual = 43751
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 124 instances were transformed.
   FD => FDRE: 48 instances
@@ -584,25 +518,25 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
   RAM64M => RAM64M (RAMD64E(x4)): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2361.258 ; gain = 0.000 ; free physical = 1028 ; free virtual = 32038
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2355.262 ; gain = 0.000 ; free physical = 7645 ; free virtual = 43751
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 995 ; free virtual = 32065
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7700 ; free virtual = 43808
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 995 ; free virtual = 32065
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7700 ; free virtual = 43808
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 995 ; free virtual = 32065
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7700 ; free virtual = 43808
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 976 ; free virtual = 32052
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7686 ; free virtual = 43800
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -630,25 +564,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 973 ; free virtual = 32062
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7664 ; free virtual = 43789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 764 ; free virtual = 31935
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7562 ; free virtual = 43687
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 764 ; free virtual = 31935
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7562 ; free virtual = 43687
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 755 ; free virtual = 31926
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7558 ; free virtual = 43684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -666,37 +600,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 752 ; free virtual = 31924
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7519 ; free virtual = 43652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 752 ; free virtual = 31924
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7519 ; free virtual = 43652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 752 ; free virtual = 31924
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7518 ; free virtual = 43652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 752 ; free virtual = 31924
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7518 ; free virtual = 43652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 752 ; free virtual = 31924
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7518 ; free virtual = 43652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 752 ; free virtual = 31924
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7518 ; free virtual = 43652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -713,33 +647,38 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     1|
-|2     |LUT3     |     1|
-|3     |LUT4     |    10|
-|4     |LUT6     |    81|
-|6     |MUXCY    |    29|
-|7     |RAM32M   |     4|
-|8     |RAM64M   |     2|
-|9     |RAMB18E1 |     1|
-|10    |XORCY    |    27|
-|11    |FD       |    47|
-|12    |FDR      |    19|
-|13    |FDRE     |    38|
-|14    |IBUF     |    18|
-|15    |OBUF     |    16|
+|2     |CARRY4   |    16|
+|3     |LUT1     |     2|
+|4     |LUT2     |     7|
+|5     |LUT3     |     4|
+|6     |LUT4     |    11|
+|7     |LUT5     |    11|
+|8     |LUT6     |   115|
+|10    |MUXCY    |    29|
+|11    |RAM32M   |     4|
+|12    |RAM64M   |     2|
+|13    |RAMB18E1 |     1|
+|14    |XORCY    |    27|
+|15    |FD       |    47|
+|16    |FDCE     |    64|
+|17    |FDR      |    19|
+|18    |FDRE     |    38|
+|19    |IBUF     |    18|
+|20    |OBUF     |    27|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 752 ; free virtual = 31924
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7518 ; free virtual = 43652
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2361.258 ; gain = 0.000 ; free physical = 804 ; free virtual = 31977
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2361.258 ; gain = 63.852 ; free physical = 804 ; free virtual = 31977
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2355.262 ; gain = 0.000 ; free physical = 7575 ; free virtual = 43709
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2355.262 ; gain = 63.852 ; free physical = 7575 ; free virtual = 43709
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2361.258 ; gain = 0.000 ; free physical = 795 ; free virtual = 31972
-INFO: [Netlist 29-17] Analyzing 179 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2355.262 ; gain = 0.000 ; free physical = 7568 ; free virtual = 43701
+INFO: [Netlist 29-17] Analyzing 195 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2361.258 ; gain = 0.000 ; free physical = 829 ; free virtual = 32016
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2355.262 ; gain = 0.000 ; free physical = 7592 ; free virtual = 43726
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 132 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 10 instances
@@ -750,10 +689,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64M => RAM64M (RAMD64E(x4)): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-135 Infos, 23 Warnings, 22 Critical Warnings and 0 Errors encountered.
+135 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 2361.258 ; gain = 64.031 ; free physical = 966 ; free virtual = 32153
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 2355.262 ; gain = 64.031 ; free physical = 7712 ; free virtual = 43846
 INFO: [Common 17-1381] The checkpoint '/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.runs/synth_1/vi_sys_top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vi_sys_top_level_utilization_synth.rpt -pb vi_sys_top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 17:27:47 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 31 15:02:21 2023...

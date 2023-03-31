@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Fri Mar 24 17:28:56 2023
+| Date         : Fri Mar 31 15:03:22 2023
 | Host         : harmony running 64-bit Ubuntu 20.04.5 LTS
 | Command      : report_methodology -file vi_sys_top_level_methodology_drc_routed.rpt -pb vi_sys_top_level_methodology_drc_routed.pb -rpx vi_sys_top_level_methodology_drc_routed.rpx
 | Design       : vi_sys_top_level
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 33
+             Violations found: 44
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 33         |
+| TIMING-18 | Warning  | Missing input or output delay | 44         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -119,80 +119,135 @@ Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on dout1[0] relative to clock(s) sys_clk_pin
+An output delay is missing on LED_out[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on dout1[1] relative to clock(s) sys_clk_pin
+An output delay is missing on LED_out[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An output delay is missing on dout1[2] relative to clock(s) sys_clk_pin
+An output delay is missing on LED_out[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
-An output delay is missing on dout1[3] relative to clock(s) sys_clk_pin
+An output delay is missing on LED_out[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#22 Warning
 Missing input or output delay  
-An output delay is missing on dout1[4] relative to clock(s) sys_clk_pin
+An output delay is missing on LED_out[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#23 Warning
 Missing input or output delay  
-An output delay is missing on dout1[5] relative to clock(s) sys_clk_pin
+An output delay is missing on LED_out[5] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#24 Warning
 Missing input or output delay  
-An output delay is missing on dout1[6] relative to clock(s) sys_clk_pin
+An output delay is missing on LED_out[6] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#25 Warning
 Missing input or output delay  
-An output delay is missing on dout1[7] relative to clock(s) sys_clk_pin
+An output delay is missing on anode_active[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#26 Warning
 Missing input or output delay  
-An output delay is missing on dout2[0] relative to clock(s) sys_clk_pin
+An output delay is missing on anode_active[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#27 Warning
 Missing input or output delay  
-An output delay is missing on dout2[1] relative to clock(s) sys_clk_pin
+An output delay is missing on anode_active[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#28 Warning
 Missing input or output delay  
-An output delay is missing on dout2[2] relative to clock(s) sys_clk_pin
+An output delay is missing on anode_active[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#29 Warning
 Missing input or output delay  
-An output delay is missing on dout2[3] relative to clock(s) sys_clk_pin
+An output delay is missing on dout1[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#30 Warning
 Missing input or output delay  
-An output delay is missing on dout2[4] relative to clock(s) sys_clk_pin
+An output delay is missing on dout1[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#31 Warning
 Missing input or output delay  
-An output delay is missing on dout2[5] relative to clock(s) sys_clk_pin
+An output delay is missing on dout1[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#32 Warning
 Missing input or output delay  
-An output delay is missing on dout2[6] relative to clock(s) sys_clk_pin
+An output delay is missing on dout1[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on dout1[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on dout1[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on dout1[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on dout1[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on dout2[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on dout2[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on dout2[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on dout2[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on dout2[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on dout2[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on dout2[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#44 Warning
 Missing input or output delay  
 An output delay is missing on dout2[7] relative to clock(s) sys_clk_pin
 Related violations: <none>
