@@ -68,9 +68,18 @@ end component;
 --The output 4x7 segment driver
 component vi_4x7_segment_driver is
     Port ( clk : in STD_LOGIC;-- 100Mhz clock on Basys 3 FPGA board
-            reset : in STD_LOGIC; -- reset
-            anode_active : out STD_LOGIC_VECTOR (3 downto 0);-- 4 Anode signals
-            LED_out : out STD_LOGIC_VECTOR (6 downto 0));-- Cathode patterns of 7-segment display
+           reset : in STD_LOGIC; -- reset
+           display_number_decimal : std_logic_vector(15 downto 0);
+           anode_active : out STD_LOGIC_VECTOR (3 downto 0);-- 4 Anode signals
+           LED_out : out STD_LOGIC_VECTOR (6 downto 0));-- Cathode patterns of 7-segment display
+end component;
+
+component binary16_to_decimal_4x4 is
+port
+(
+    input_binary : in  integer range 0 to 9999;
+    output_decimal   : out std_logic_vector(15 downto 0)
+);
 end component;
 	
 --the signals:		
@@ -80,7 +89,8 @@ signal instruction_sig:std_logic_vector(17 downto 0);
 signal din_sig,dout_sig,port_id_sig:std_logic_vector(7 downto 0);
 signal write_strobe_sig,k_write_strobe_sig,read_strobe_sig,interrupt_sig,interrupt_ack_sig : std_logic;
 signal sleep_sig,rdl_sig,reset_sig,bram_enable_sig:std_logic;
-signal number1:std_logic_vector(13 downto 0);
+signal s_binary_number_1:integer range 0 to 9999;
+signal s_display_number_decimal:std_logic_vector(15 downto 0):=B"0001010100100011";
 signal s_anode_active:STD_LOGIC_VECTOR(3 downto 0);
 signal s_LED_out:STD_LOGIC_VECTOR(6 downto 0);
 begin
@@ -123,7 +133,8 @@ vi_out_ports:vi_output_ports port map (clk=>clk,write_strobe=>write_strobe_sig,p
 
 vi_in_ports:vi_input_ports port map (clk=>clk,read_strobe=>read_strobe_sig,port_id=>port_id_sig,din1=>din1,din2=>din2,dout=>din_sig);
 
-vi_display_driver:vi_4x7_segment_driver port map (clk=>clk,reset=>reset,anode_active=>s_anode_active,LED_out=>s_LED_out);
+vi_binary_to_decimal:binary16_to_decimal_4x4 port map (input_binary=>s_binary_number_1,output_decimal=>s_display_number_decimal);
+vi_display_driver:vi_4x7_segment_driver port map (clk=>clk,reset=>reset,anode_active=>s_anode_active,LED_out=>s_LED_out,display_number_decimal=>s_display_number_decimal);
 
 anode_active <= s_anode_active;
 LED_out <= s_LED_out;
