@@ -89,7 +89,7 @@ signal instruction_sig:std_logic_vector(17 downto 0);
 signal din_sig,dout_sig,port_id_sig:std_logic_vector(7 downto 0);
 signal write_strobe_sig,k_write_strobe_sig,read_strobe_sig,interrupt_sig,interrupt_ack_sig : std_logic;
 signal sleep_sig,rdl_sig,reset_sig,bram_enable_sig:std_logic;
-signal s_binary_number_1:integer range 0 to 9999;
+signal s_binary_number_1:integer range 0 to 9999 := 3251;
 signal s_display_number_decimal:std_logic_vector(15 downto 0):=B"0001010100100011";
 signal s_anode_active:STD_LOGIC_VECTOR(3 downto 0);
 signal s_LED_out:STD_LOGIC_VECTOR(6 downto 0);

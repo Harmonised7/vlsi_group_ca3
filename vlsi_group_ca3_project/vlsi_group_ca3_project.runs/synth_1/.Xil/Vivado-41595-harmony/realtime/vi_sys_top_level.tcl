@@ -13,7 +13,7 @@ set rt::rc [catch {
     set rt::cmdEcho 0
     rt::set_parameter writeXmsg true
     rt::set_parameter enableParallelHelperSpawn true
-    set ::env(RT_TMP) "./.Xil/Vivado-17544-harmony/realtime/tmp"
+    set ::env(RT_TMP) "./.Xil/Vivado-41595-harmony/realtime/tmp"
     if { [ info exists ::env(RT_TMP) ] } {
       file mkdir $::env(RT_TMP)
     }
@@ -43,7 +43,7 @@ set rt::rc [catch {
       rt::filesetChecksum
     }
     rt::set_parameter usePostFindUniquification true
-    set rt::SDCFileList ./.Xil/Vivado-17544-harmony/realtime/vi_sys_top_level_synth.xdc
+    set rt::SDCFileList ./.Xil/Vivado-41595-harmony/realtime/vi_sys_top_level_synth.xdc
     rt::sdcChecksum
     set rt::top vi_sys_top_level
     rt::set_parameter enableIncremental true
@@ -60,7 +60,7 @@ set rt::rc [catch {
     rt::set_parameter webTalkPath {/media/2TB_Crucial_SSD/repos/vlsi_group_ca3/vlsi_group_ca3_project/vlsi_group_ca3_project.cache/wt}
     rt::set_parameter synthDebugLog false
     rt::set_parameter printModuleName false
-    rt::set_parameter enableSplitFlowPath "./.Xil/Vivado-17544-harmony/"
+    rt::set_parameter enableSplitFlowPath "./.Xil/Vivado-41595-harmony/"
     set ok_to_delete_rt_tmp true 
     if { [rt::get_parameter parallelDebug] } { 
        set ok_to_delete_rt_tmp false 
